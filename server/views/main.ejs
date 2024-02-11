@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link href="/Styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="title">Merna's Chat</h1>
+    <div class="main">
+      <div class="name">
+        👽
+        <input
+          type="text"
+          name="name"
+          id="name-input"
+          class="name-input"
+          value="anonymous"
+        />
+      </div>
+      <ul class="message-container" id="message-container"></ul>
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">Send</button>
+      </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">Total clients is :1</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/Scripts/script.js"></script>
+    <!-- <script>
+      var socket = io();
+    </script> -->
+  </body>
+</html>
